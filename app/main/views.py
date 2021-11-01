@@ -1,7 +1,12 @@
 from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render
-from django.views import View
 
-# Create your views here.
+from .models import Receipt
+
+
 def index(request: WSGIRequest):
-    return render(request, "main.html", {'title': "Книга рецептов"})
+    return render(request, "main.html", {'title': "Книга рецептов", 'items': Receipt.objects.all()})
+
+
+def view(request: WSGIRequest, idx: int):
+    pass

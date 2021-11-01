@@ -6,7 +6,7 @@ services:
   app:
     build:
       context: .
-    image: &app app
+    image: app
     ports:
       - "8000:8000"
     volumes:

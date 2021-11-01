@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator, Page
 from django.db import models
 
 
@@ -13,6 +14,21 @@ class Ingredient(models.Model):
 class Receipt(models.Model):
     name = models.CharField(max_length=16, unique=True, verbose_name='Название')
     definition = models.TextField(max_length=4000, verbose_name='Описание')
+
+    @staticmethod
+    def get_page(page) -> Page:
+        """
+        Возвращает страницу из списка рецептов
+
+        :param page: Номер страницы
+        """
+        items = None
+        objects = Receipt.objects.order_by('pk')
+        if objects.count() > 0:
+            paginator = Paginator(objects, 20)
+            items = paginator.page(page)
+
+        return items
 
 
 class ReceiptItem(models.Model):

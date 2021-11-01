@@ -2,4 +2,22 @@
 {% block title %}{{ title }}{% endblock title %}
 {% block main %}
     <h1 class="mt-2 text-center">{{ title }}</h1>
+    {% if items.count == 0 %}
+        <p class="text-center">Здесь пока пусто</p>
+    {% endif %}
+    <div class="row">
+        <div class="col-12">
+            {% for item in items %}
+            <div class="card mt-2">
+                <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><a href="#" class="text-muted">Подробнее...</a></small>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock main %}
