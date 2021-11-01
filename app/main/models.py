@@ -30,6 +30,9 @@ class Receipt(models.Model):
 
         return items
 
+    def cut_definition(self):
+        return self.definition[0:400]
+
 
 class ReceiptItem(models.Model):
     """Строка в рецепте, например: '2 чайные ложки соли'"""
