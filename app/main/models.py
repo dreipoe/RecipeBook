@@ -60,7 +60,7 @@ class Receipt(NamedModel):
         return items
 
     def cut_definition(self):
-        return self.definition[0:400]
+        return f"{self.definition[0:400]}..."
 
 
 class ReceiptItem(models.Model):
