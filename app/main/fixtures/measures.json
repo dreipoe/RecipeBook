@@ -1,0 +1,58 @@
+[
+  {
+    "model": "main.measure",
+    "pk": 1,
+    "fields": {
+      "name": "шт."
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 2,
+    "fields": {
+      "name": "кубик"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 3,
+    "fields": {
+      "name": "мл"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 4,
+    "fields": {
+      "name": "л"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 5,
+    "fields": {
+      "name": "г"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 6,
+    "fields": {
+      "name": "кг"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 7,
+    "fields": {
+      "name": "ст. ложка"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 8,
+    "fields": {
+      "name": "чайн. ложка"
+    }
+  }
+]

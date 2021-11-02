@@ -1,0 +1,100 @@
+[
+  {
+    "model": "main.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "подсолнечного масла"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "макарон"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "пельменей"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "яиц"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "соли"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "молока"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "куриного мяса"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "помидоров"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "огурцов"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "петрушки"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "лука"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "майонеза"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "армянского лаваша"
+    }
+  },
+  {
+    "model": "main.ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "белого хлеба"
+    }
+  }
+]

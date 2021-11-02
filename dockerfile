@@ -3,7 +3,7 @@ MAINTAINER Dreipoe & Co.
 
 ENV PYTHONUNBUFFERED 1
 
-RUN apt update || apt upgrade
+RUN apt update
 
 COPY ./requirements.txt /requirements.txt
 RUN pip3 install --upgrade pip -r /requirements.txt
