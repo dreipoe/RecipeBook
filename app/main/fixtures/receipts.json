@@ -19,8 +19,8 @@
     "model": "main.receipt",
     "pk": 3,
     "fields": {
-      "name": "Макароны по-флотски",
-      "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "name": "Пирог с коньяком",
+      "definition": "Прежде чем начать, попробуйте коньяк - хорош ли? Взбейте масло миксером до воздушности. Попробуйте ещё раз коньяк - действительно ли он высшего качества? Для этого налейте полный стакан и выпейте до дна. Повторите 2 раза.\nДобавьте 2 ложки сахара и попробуйте вновь. Разбейте об миску яйца и бросьте туда эти странные сморщенные фрукты. Попробуйте коньяк на консистенцию.\nМыключите виксер. Застрявшие фрукты хорошо вытаскивать ножницами! Бросьте лимон в хиксер и выжмите туда же орехи. Добавьте сахар и вообще всё, что хотите. Вымажьте духовку маслом и поверните на 360 градусов.\nВыбросьте миску из окна, допейте коньяк, наплюйте на пирог и идите спать!"
     }
   }
 ]

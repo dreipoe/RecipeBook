@@ -16,12 +16,12 @@ services:
     command: >
       sh -c 'python3 manage.py runserver 0.0.0.0:8000'
     links:
-      - db1
+      - db
     depends_on:
-      - db1
+      - db
 
   # Database
-  db1:
+  db:
     image: postgres:14-alpine
     environment:
       - POSTGRES_DB=${POSTGRES_DB}

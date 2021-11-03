@@ -54,5 +54,19 @@
     "fields": {
       "name": "чайн. ложка"
     }
+  },
+  {
+    "model": "main.measure",
+    "pk": 9,
+    "fields": {
+      "name": "стакан"
+    }
+  },
+  {
+    "model": "main.measure",
+    "pk": 10,
+    "fields": {
+      "name": "горсть"
+    }
   }
 ]

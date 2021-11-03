@@ -1,0 +1,72 @@
+[
+  {
+    "model": "main.receiptitem",
+    "pk": 1,
+    "fields": {
+      "n": 1,
+      "measure": 9,
+      "ingredient": 16,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 2,
+    "fields": {
+      "n": 2,
+      "measure": 9,
+      "ingredient": 17,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 3,
+    "fields": {
+      "n": 1,
+      "measure": 9,
+      "ingredient": 18,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 4,
+    "fields": {
+      "n": 1,
+      "measure": 10,
+      "ingredient": 19,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 5,
+    "fields": {
+      "n": 250,
+      "measure": 5,
+      "ingredient": 1,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 6,
+    "fields": {
+      "n": 1,
+      "measure": 1,
+      "ingredient": 20,
+      "receipt": 3
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 7,
+    "fields": {
+      "n": 2,
+      "measure": 4,
+      "ingredient": 15,
+      "receipt": 3
+    }
+  }
+]
