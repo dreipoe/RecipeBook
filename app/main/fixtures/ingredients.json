@@ -3,140 +3,140 @@
     "model": "main.ingredient",
     "pk": 1,
     "fields": {
-      "name": "подсолнечное масло"
+      "name": "подсолнечного масла"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 2,
     "fields": {
-      "name": "макароны"
+      "name": "макарон"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 3,
     "fields": {
-      "name": "пельмени"
+      "name": "пельменей"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 4,
     "fields": {
-      "name": "яйцо"
+      "name": "яиц"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 5,
     "fields": {
-      "name": "соль"
+      "name": "соли"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 6,
     "fields": {
-      "name": "молоко"
+      "name": "молока"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 7,
     "fields": {
-      "name": "куриное мясо"
+      "name": "куриного мяса"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 8,
     "fields": {
-      "name": "помидор"
+      "name": "помидоров"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 9,
     "fields": {
-      "name": "огурец"
+      "name": "огурцов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 10,
     "fields": {
-      "name": "петрушка"
+      "name": "петрушки"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 11,
     "fields": {
-      "name": "лук"
+      "name": "лука"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 12,
     "fields": {
-      "name": "майонез"
+      "name": "майонеза"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 13,
     "fields": {
-      "name": "армянский лаваш"
+      "name": "армянского лаваша"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 14,
     "fields": {
-      "name": "белый хлеб"
+      "name": "белого хлеба"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 15,
     "fields": {
-      "name": "армянский коньяк"
+      "name": "армянского коньяка"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 16,
     "fields": {
-      "name": "сахар"
+      "name": "сахара"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 17,
     "fields": {
-      "name": "сухофрукты"
+      "name": "сухофруктов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 18,
     "fields": {
-      "name": "вода"
+      "name": "воды"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 19,
     "fields": {
-      "name": "орехи"
+      "name": "орехов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 20,
     "fields": {
-      "name": "лимон"
+      "name": "лимона"
     }
   }
 ]

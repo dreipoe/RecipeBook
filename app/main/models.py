@@ -23,7 +23,23 @@ class Measure(NamedModel):
         verbose_name_plural = "Единицы измерения"
 
     """Единицы измерения"""
-    name = models.CharField(max_length=32, unique=True, verbose_name='Название')
+    # была идея использовать pymorphy2, но разбираться было долго, а времени не было
+    name = models.CharField(max_length=32, unique=True, verbose_name='Название ')
+    name_case_1 = models.CharField(max_length=32, null=True, blank=True, verbose_name='Название (например, 2 ложки)')
+    name_case_2 = models.CharField(
+        max_length=32, null=True, blank=True, verbose_name='Название (например, 5 ложек)'
+    )
+
+    def get_inflected_name(self, n: int):
+        name = self.name_case_2 if self.name_case_2 is not None else self.name
+        if n // 10 % 10 != 1:
+            last_digit = n % 10
+            if last_digit == 1:
+                name = self.name
+            elif last_digit in range(2, 5):
+                name = self.name_case_1 if self.name_case_1 is not None else self.name
+
+        return name
 
 
 class Ingredient(NamedModel):
@@ -32,7 +48,7 @@ class Ingredient(NamedModel):
         verbose_name = "Ингредиент"
         verbose_name_plural = "Ингредиенты"
 
-    name = models.CharField(max_length=32, unique=True, verbose_name='Название')
+    name = models.CharField(max_length=32, unique=True, verbose_name='Название в родительном падеже')
 
 
 class Receipt(NamedModel):
@@ -78,4 +94,5 @@ class ReceiptItem(models.Model):
     receipt = models.ForeignKey(to=Receipt, on_delete=models.RESTRICT, verbose_name='Рецепт')
 
     def __str__(self):
-        return f"{self.n} {self.measure} {self.ingredient}"
+        n = self.n
+        return f"{n} {self.measure.get_inflected_name(n)} {self.ingredient}"

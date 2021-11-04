@@ -10,7 +10,9 @@
     "model": "main.measure",
     "pk": 2,
     "fields": {
-      "name": "кубик"
+      "name": "кубик",
+      "name_case_1": "кубика",
+      "name_case_2": "кубиков"
     }
   },
   {
@@ -45,28 +47,36 @@
     "model": "main.measure",
     "pk": 7,
     "fields": {
-      "name": "ст. ложка"
+      "name": "ст. ложка",
+      "name_case_1": "ст. ложки",
+      "name_case_2": "ст. ложек"
     }
   },
   {
     "model": "main.measure",
     "pk": 8,
     "fields": {
-      "name": "чайн. ложка"
+      "name": "чайн. ложка",
+      "name_case_1": "чайн. ложки",
+      "name_case_2": "чайн. ложек"
     }
   },
   {
     "model": "main.measure",
     "pk": 9,
     "fields": {
-      "name": "стакан"
+      "name": "стакан",
+      "name_case_1": "стакана",
+      "name_case_2": "стаканов"
     }
   },
   {
     "model": "main.measure",
     "pk": 10,
     "fields": {
-      "name": "горсть"
+      "name": "горсть",
+      "name_case_1": "горсти",
+      "name_case_2": "горстей"
     }
   }
 ]
