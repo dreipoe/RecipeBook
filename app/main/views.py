@@ -9,4 +9,7 @@ def index(request: WSGIRequest):
 
 
 def detail(request: WSGIRequest, idx: int):
-    return render(request, "detail.html", {"item": get_object_or_404(Receipt, pk=idx)})
+    item = get_object_or_404(Receipt, pk=idx)
+    ingredients = item.get_ingredients()
+
+    return render(request, "detail.html", {"item": item, "ingredients": ingredients})

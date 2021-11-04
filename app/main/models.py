@@ -60,7 +60,10 @@ class Receipt(NamedModel):
         return items
 
     def cut_definition(self):
-        return f"{self.definition[0:400]}..."
+        return f"{self.definition[0:450]}..."
+
+    def get_ingredients(self):
+        return ReceiptItem.objects.filter(receipt=self.id)
 
 
 class ReceiptItem(models.Model):

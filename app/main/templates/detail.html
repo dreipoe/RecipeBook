@@ -2,6 +2,14 @@
 {% block title %}{{ item.name }}{% endblock title %}
 {% block main %}
     <h1 class="mt-2 text-center">{{ item.name }}</h1>
+    {% if ingredients.count > 0 %}
+        <h5>Вам понадобится:</h5>
+        <ul>
+        {% for ingredient in ingredients %}
+            <li>{{ ingredient }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
     <p>{{ item.definition|linebreaks }}</p>
     <small><a class="text-muted" href="{% url "index" %}">Вернуться к списку рецептов</a></small>
 {% endblock main %}
