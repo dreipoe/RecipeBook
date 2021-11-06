@@ -76,7 +76,8 @@ class Receipt(NamedModel):
         return items
 
     def cut_definition(self):
-        return f"{self.definition[0:450]}..."
+        n = 500
+        return f"{self.definition[0:n]}..." if len(self.definition) > n else self.definition
 
     def get_ingredients(self):
         return ReceiptItem.objects.filter(receipt=self.id)

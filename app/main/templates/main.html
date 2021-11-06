@@ -6,18 +6,31 @@
         <p class="text-center">Здесь пока пусто.</p>
     {% endif %}
     <div class="row">
-        <div class="col-12">
-            {% for item in items %}
-            <div class="card mt-2">
-                <div class="card-body">
-                    <h5 class="card-title">{{ item.name }}</h5>
-                    <p class="card-text">{{ item.cut_definition }}</p>
+        <form class="form-inline mb-2">
+            <div class="row">
+                <div class="col">
+                    <input type="search" id="a" class="form-control"/>
                 </div>
-                <div class="card-footer">
-                    <small class="text-muted"><a href="{% url "detail" idx=item.pk %}" class="text-muted">Подробнее...</a></small>
+                <div class="col">
+                    <input type="search" id="b" class="form-control"/>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary">Найти</button>
                 </div>
             </div>
-            {% endfor %}
+        </form>
+    </div>
+    <div class="row">
+        {% for item in items %}
+        <div class="card mt-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <p class="card-text">{{ item.cut_definition }}</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted"><a href="{% url "detail" idx=item.pk %}" class="text-muted">Подробнее...</a></small>
+            </div>
         </div>
+        {% endfor %}
     </div>
 {% endblock main %}
