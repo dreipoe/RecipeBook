@@ -2,35 +2,31 @@
 {% block title %}{{ title }}{% endblock title %}
 {% block main %}
     <h1 class="mt-2 text-center">{{ title }}</h1>
+    <form>
+        <div class="row">
+            <div class="col">
+                <input type="search" id="a" name="receipt" value="{{ receipt_name|default_if_none:'' }}" class="form-control" placeholder="Название рецепта..."/>
+            </div>
+            <div class="col">
+                <input type="search" id="b" name="ingredient" value="{{ ingredient_name|default_if_none:'' }}" class="form-control" placeholder="Название ингредиента..."/>
+            </div>
+            <div class="col-2 text-center">
+                <button type="submit" class="btn btn-primary">Найти</button>
+            </div>
+        </div>
+    </form>
     {% if items.count == 0 %}
         <p class="text-center">Здесь пока пусто.</p>
     {% endif %}
-    <div class="row">
-        <form class="form-inline mb-2">
-            <div class="row">
-                <div class="col">
-                    <input type="search" id="a" class="form-control"/>
-                </div>
-                <div class="col">
-                    <input type="search" id="b" class="form-control"/>
-                </div>
-                <div class="col-1">
-                    <button class="btn btn-primary">Найти</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="row">
-        {% for item in items %}
-        <div class="card mt-2">
-            <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <p class="card-text">{{ item.cut_definition }}</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted"><a href="{% url "detail" idx=item.pk %}" class="text-muted">Подробнее...</a></small>
-            </div>
+    {% for item in items %}
+    <div class="card mt-2">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.cut_definition }}</p>
         </div>
-        {% endfor %}
+        <div class="card-footer">
+            <small class="text-muted"><a href="{% url "detail" idx=item.pk %}" class="text-muted">Подробнее...</a></small>
+        </div>
     </div>
+    {% endfor %}
 {% endblock main %}

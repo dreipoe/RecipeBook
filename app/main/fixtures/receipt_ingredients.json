@@ -68,5 +68,115 @@
       "ingredient": 15,
       "receipt": 3
     }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 8,
+    "fields": {
+      "n": 30,
+      "measure": 11,
+      "ingredient": 13,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 9,
+    "fields": {
+      "n": 1,
+      "measure": 1,
+      "ingredient": 4,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 10,
+    "fields": {
+      "n": 1,
+      "measure": 8,
+      "ingredient": 5,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 11,
+    "fields": {
+      "n": 80,
+      "measure": 5,
+      "ingredient": 7,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 12,
+    "fields": {
+      "n": 80,
+      "measure": 5,
+      "ingredient": 8,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 13,
+    "fields": {
+      "n": 80,
+      "measure": 5,
+      "ingredient": 9,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 14,
+    "fields": {
+      "n": 50,
+      "measure": 5,
+      "ingredient": 10,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 15,
+    "fields": {
+      "n": 50,
+      "measure": 5,
+      "ingredient": 11,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 16,
+    "fields": {
+      "n": 1,
+      "measure": 7,
+      "ingredient": 12,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 17,
+    "fields": {
+      "n": 30,
+      "measure": 5,
+      "ingredient": 14,
+      "receipt": 1
+    }
+  },
+  {
+    "model": "main.receiptitem",
+    "pk": 18,
+    "fields": {
+      "n": 1,
+      "measure": 7,
+      "ingredient": 1,
+      "receipt": 1
+    }
   }
 ]

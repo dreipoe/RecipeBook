@@ -3,6 +3,8 @@ from django.db import models
 
 
 class NamedModel(models.Model):
+    """Абстрактный класс модели с полем name"""
+
     class Meta:
         abstract = True
 
@@ -17,13 +19,14 @@ class NamedModel(models.Model):
 
 
 class Measure(NamedModel):
+    """Единица измерения"""
+
     class Meta:
         app_label = "main"
         verbose_name = "Единица измерения"
         verbose_name_plural = "Единицы измерения"
 
-    """Единицы измерения"""
-    # была идея использовать pymorphy2, но разбираться было долго, а времени не было
+    # была идея использовать pymorphy2, но разбираться было долго, а времени было мало
     name = models.CharField(max_length=32, unique=True, verbose_name='Название ')
     name_case_1 = models.CharField(max_length=32, null=True, blank=True, verbose_name='Название (например, 2 ложки)')
     name_case_2 = models.CharField(
@@ -31,6 +34,7 @@ class Measure(NamedModel):
     )
 
     def get_inflected_name(self, n: int):
+        """Склонение наименования единиы измерения после числа"""
         name = self.name_case_2 if self.name_case_2 is not None else self.name
         if n // 10 % 10 != 1:
             last_digit = n % 10
@@ -43,15 +47,23 @@ class Measure(NamedModel):
 
 
 class Ingredient(NamedModel):
+    """Ингредиент"""
+
     class Meta:
         app_label = "main"
         verbose_name = "Ингредиент"
         verbose_name_plural = "Ингредиенты"
 
-    name = models.CharField(max_length=32, unique=True, verbose_name='Название в родительном падеже')
+    name = models.CharField(max_length=32, unique=True, verbose_name='Название')
+    name_genitive = models.CharField(max_length=32, null=True, blank=True, verbose_name='Название в родительном падеже')
+
+    def get_genitive(self):
+        return self.name_genitive if self.name_genitive is not None else self.name
 
 
 class Receipt(NamedModel):
+    """Рецепт"""
+
     class Meta:
         app_label = "main"
         verbose_name = "Рецепт"
@@ -76,14 +88,18 @@ class Receipt(NamedModel):
         return items
 
     def cut_definition(self):
+        """Обрезает описание рецепта для его отображения в карточке в списке рецептов"""
         n = 500
         return f"{self.definition[0:n]}..." if len(self.definition) > n else self.definition
 
     def get_ingredients(self):
+        """Получает список ингредиентов для рецепта"""
         return ReceiptItem.objects.filter(receipt=self.id)
 
 
 class ReceiptItem(models.Model):
+    """Запись об ингредиенте и его количестве в рецепте"""
+
     class Meta:
         app_label = "main"
         verbose_name = "Ингредиент в рецепте"
@@ -96,4 +112,4 @@ class ReceiptItem(models.Model):
 
     def __str__(self):
         n = self.n
-        return f"{n} {self.measure.get_inflected_name(n)} {self.ingredient}"
+        return f"{n} {self.measure.get_inflected_name(n)} {self.ingredient.get_genitive()}"

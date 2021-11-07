@@ -3,140 +3,160 @@
     "model": "main.ingredient",
     "pk": 1,
     "fields": {
-      "name": "подсолнечного масла"
+      "name": "подсолнечное масло",
+      "name_genitive": "подсолнечного масла"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 2,
     "fields": {
-      "name": "макарон"
+      "name": "макароны",
+      "name_genitive": "макарон"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 3,
     "fields": {
-      "name": "пельменей"
+      "name": "пельмени",
+      "name_genitive": "пельменей"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 4,
     "fields": {
-      "name": "яиц"
+      "name": "яйца",
+      "name_genitive": "яиц"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 5,
     "fields": {
-      "name": "соли"
+      "name": "соль",
+      "name_genitive": "соли"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 6,
     "fields": {
-      "name": "молока"
+      "name": "молоко",
+      "name_genitive": "молока"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 7,
     "fields": {
-      "name": "куриного мяса"
+      "name": "куриное мясо",
+      "name_genitive": "куриного мяса"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 8,
     "fields": {
-      "name": "помидоров"
+      "name": "помидоры",
+      "name_genitive": "помидоров"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 9,
     "fields": {
-      "name": "огурцов"
+      "name": "огурцы",
+      "name_genitive": "огурцов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 10,
     "fields": {
-      "name": "петрушки"
+      "name": "петрушка",
+      "name_genitive": "петрушки"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 11,
     "fields": {
-      "name": "лука"
+      "name": "лук",
+      "name_genitive": "лука"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 12,
     "fields": {
-      "name": "майонеза"
+      "name": "майонез",
+      "name_genitive": "майонеза"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 13,
     "fields": {
-      "name": "армянского лаваша"
+      "name": "армянский лаваш",
+      "name_genitive": "армянского лаваша"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 14,
     "fields": {
-      "name": "белого хлеба"
+      "name": "белый хлеб",
+      "name_genitive": "белого хлеба"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 15,
     "fields": {
-      "name": "армянского коньяка"
+      "name": "армянский коньяк",
+      "name_genitive": "армянского коньяка"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 16,
     "fields": {
-      "name": "сахара"
+      "name": "сахар",
+      "name_genitive": "сахара"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 17,
     "fields": {
-      "name": "сухофруктов"
+      "name": "сухофрукты",
+      "name_genitive": "сухофруктов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 18,
     "fields": {
-      "name": "воды"
+      "name": "вода",
+      "name_genitive": "воды"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 19,
     "fields": {
-      "name": "орехов"
+      "name": "орехи",
+      "name_genitive": "орехов"
     }
   },
   {
     "model": "main.ingredient",
     "pk": 20,
     "fields": {
-      "name": "лимона"
+      "name": "лимон",
+      "name_genitive": "лимона"
     }
   }
 ]
