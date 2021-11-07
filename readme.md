@@ -41,19 +41,18 @@ docker-compose exec app bash
 ```
 
 #### Применение миграций
-
+Создает схему базы данных
 ```bash
 python manage.py migrate
 ```
 
 #### Создание суперпользователя
-
+Необходима для доступа к админке
 ```bash
 python manage.py createsuperuser
 ```
 
 #### Добавление фикстур
-
 ```bash
 python manage.py loaddata ingredients measures receipts receipt_ingredients
 ```
