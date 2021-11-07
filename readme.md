@@ -47,7 +47,7 @@ python manage.py migrate
 ```
 
 #### Создание суперпользователя
-Необходима для доступа к админке
+Необходимо для доступа к админке
 ```bash
 python manage.py createsuperuser
 ```
